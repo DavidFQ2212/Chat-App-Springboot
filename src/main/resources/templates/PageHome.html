@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeJava Central</title>
+    <link rel="stylesheet" th:href="@{/styles/ForPageHome.css}">
+</head>
+
+<body>
+    <div class="containerG">
+
+
+        <div class="containerHeader">
+            <div class="nav">
+
+                <a href="">Home</a>
+                <a href="#Biografia">Biografia</a>
+                <a href="#Fotos">Galeria</a>
+                <a href="#publis">Publicaciones</a>
+                <a th:href="@{/Publicar}">Publicar</a>
+                <a href="#Contactanos">Contactanos</a>
+
+            </div>
+            <div class="HeaderContent">
+                <h1>
+                    Code Java Central
+                </h1>
+                <p>Tu Fuente de Conocimiento Java</p>
+            </div>
+
+
+        </div>
+        <div class="containerBiografi" id="Biografia">
+            <div class="containerImage">
+                <img th:src="@{/images/Main/fotoPerfil.jpg}" alt="" class="photoPorfile">
+            </div>
+            <div class="Description">
+                <div class="DescriptionH1">
+
+                    <h2 class="DescriptionH1">David Flores Java Developer</h2>
+
+
+                </div>
+
+                <p>¡Saludos! Soy David , un apasionado estudiante de ingeniería informática y entusiasta
+                    desarrollador backend Java. Mi viaje en el mundo de la tecnología es un emocionante recorrido donde
+                    la creatividad se combina con el código para dar vida a soluciones innovadoras. Mi pasión por la
+                    programación y las tecnologías emergentes me motiva constantemente a explorar nuevas posibilidades y
+                    desafíos. Como apasionado de la informática, encuentro un sinfín de oportunidades para crear
+                    soluciones eficientes y escalables, utilizando Java como mi herramienta principal. Estoy emocionado
+                    de seguir aprendiendo, creciendo y colaborando en proyectos que impulsen los límites de la
+                    tecnología. ¡Juntos, exploremos el futuro digital con ingenio y creatividad!</p>
+
+            </div>
+
+        </div>
+
+        <div class="containerGalery" id="Fotos">
+
+            <img class="imagen" th:src="@{/images/Galery/CongresoIEEE.jpg}">
+            <img th:src="@{/images/Galery/Talent.jpg}">
+            <img th:src="@{/images/Galery/TECMonterrey.jpg}">
+            <img th:src="@{/images/Galery/Hackaton.jpg}">
+            <img th:src="@{/images/Galery/VisitaTEC1.jpg}">
+            <img th:src="@{/images/Galery/ESIME.jpg}">
+
+        </div>
+    </div>
+    <div class="containerPosts" id="publis">
+        <h1>Publicaciones que pueden interesarte!!</h1>
+        <div class="container">
+
+            <div class="square">
+                <img th:src="@{/images/Post/java.png}" alt="Imagen 1">
+                <div class="overlay"><a th:href="@{/Pubs/Java}">Java</a></div>
+            </div>
+            <div class="square">
+                <img th:src="@{/images/Post/DesWeb.png}" alt="Imagen 2">
+                <div class="overlay"><a th:href="@{/Pubs/Desweb}">Desarrollo Web</a></div>
+            </div>
+            <div class="square">
+                <img th:src="@{/images/Post/Systems.jpg}" alt="Imagen 3">
+                <div class="overlay"> <a th:href="@{/Pubs/Sistemas}">Sistemas</a></div>
+            </div>
+            <div class="square">
+                <img th:src="@{/images/Post/git&Github.jpg}" alt="Imagen 4">
+                <div class="overlay"><a th:href="@{/Pubs/Gits}">Git y Gitub</a></div>
+            </div>
+            <div class="square">
+                <img th:src="@{/images/Post/Robotics.jpg}" alt="Imagen 5">
+                <div class="overlay"> <a th:href="@{/Pubs/Robotica}">Robotica</a></div>
+            </div>
+
+        </div>
+        <div class="contact" id="Contactanos">
+            <a href=""><img th:src="@{/images/Contact/LogoCorreo.png}" alt=""></a>
+            <a href=""><img th:src="@{/images/Contact/LogoFB.png}" alt=""></a>
+            <a href=""><img th:src="@{/images/Contact/logoGithub.png}" alt=""></a>
+            <a href=""><img th:src="@{/images/Contact/logowa.png}" alt=""></a>
+            <a href=""><img th:src="@{/images/Contact/LogoLin.png}" alt=""></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

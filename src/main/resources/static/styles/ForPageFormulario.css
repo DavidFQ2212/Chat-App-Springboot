@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Satisfy&display=swap');
+
+/* Estilos generales */
+body {
+    color: white;
+    text-shadow: 2px 2px 10px white;
+    font-family: 'Castoro Titling', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.containerG {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el título */
+.Title {
+    box-shadow: 5px 5px 15px black;
+    border-radius: 5px;
+    background-color: #35A29F;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.Form {
+    box-shadow: 5px 5px 15px black;
+    background-color: #35A29F;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 5px 5px 15px black;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+select {
+    font-size: 30PX;
+    height: 60px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 30px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    border-radius: 5px;
+    text-shadow: 1px 1px 5px black;
+    font-family: 'Castoro Titling', cursive;
+    box-shadow: 5px 5px 15px black;
+    width: 750PX;
+    height: 300PX;
+    font-size: 30PX;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .containerG {
+        max-width: 100%;
+    }
+}

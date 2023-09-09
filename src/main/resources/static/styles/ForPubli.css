@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Satisfy&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Castoro Titling', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #35A29F;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Estilos de los posts */
+.post {
+    background-color: #97FEED;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.contenido {
+    background-color: #7ccccc;
+    border: 1px solid #000000;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+}

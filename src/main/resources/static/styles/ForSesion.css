@@ -1,0 +1,85 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/Login/Fondo.jpg');
+    /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.348);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 20px rgb(145, 145, 145);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-form h1 {
+    text-shadow: 5px 5px 3px black;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.login-form img {
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+label {
+    text-shadow: 5px 5px 3px black;
+    font-size: 30px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+
+    text-shadow: 2px 2px 5px black;
+    background-color: transparent;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+button {
+    box-shadow: 5px 5px 10px black;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

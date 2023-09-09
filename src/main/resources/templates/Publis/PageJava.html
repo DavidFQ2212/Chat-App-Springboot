@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/styles/ForPubli.css}">
+</head>
+
+<body>
+
+    <header>
+        <h1>java</h1>
+    </header>
+    <main>
+        <div class="post" th:if="${pubs != null and !pubs.empty }">
+            <th:block th:if="${publi.categoria == 'Java'}" th:each="publi : ${pubs}">
+                <div class="contenido">
+                    <h2 th:text="${publi.titulo}">Título del Post 1</h2>
+                    <p th:text="${publi.contenido}">Contenido del post 1...</p>
+                    <p th:text="${publi.categoria}"></p>
+                </div>
+
+            </th:block>
+
+        </div>
+
+        <!-- Agrega más divs de "post" según sea necesario -->
+    </main>
+</body>
+
+</html>

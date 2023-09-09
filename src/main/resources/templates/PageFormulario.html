@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/styles/ForPageFormulario.css}">
+</head>
+
+
+
+<body>
+    <div class="containerG">
+        <div class="Title">
+            <h1>Ingrese los datos de la publicacion</h1>
+            <a th:href="@{/}">Regresar</a>
+        </div>
+        <div class="Form">
+            <form th:action="@{/guardar}" method="post" th:object="${pub}">
+                <input type="hidden" name="idpublicacion" th:fiel="*{idpublicacion}">
+                <label for="titulo">Titulo</label>
+                <input type="text" name="titulo" th:field="*{titulo}" class="Itxt">
+
+                <label for="contenido">Contenido</label>
+
+                <textarea name="contenido" th:field="*{contenido}" class="Itxt"></textarea>
+
+
+                <label for="categoria">Categoria</label>
+                <select name="categoria" th:field="*{categoria}">
+                    <option value="Java">Java</option>
+                    <option value="Desarrollo Web">Desarrollo Web</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Gits">Gits</option>
+                    <option value="Robotica">Robotica</option>
+                </select>
+
+                <input type="submit" value="Enviar" name="guardar">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
